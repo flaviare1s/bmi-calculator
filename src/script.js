@@ -32,7 +32,7 @@ function bmiCalculation() {
     const weight = Number(weightMetricInput.value)
     const bmi = weight / (height * height)
 
-    result.innerText = bmi.toFixed(2)
+    result.innerText = bmi.toFixed()
 }
 
 
