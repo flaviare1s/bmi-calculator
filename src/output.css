@@ -751,6 +751,14 @@ video {
   top: 2%;
 }
 
+.top-\[13\%\] {
+  top: 13%;
+}
+
+.top-\[14\%\] {
+  top: 14%;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -855,6 +863,22 @@ video {
 
 .mb-\[70px\] {
   margin-bottom: 70px;
+}
+
+.mb-\[20\%\] {
+  margin-bottom: 20%;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mb-\[60px\] {
+  margin-bottom: 60px;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .flex {
