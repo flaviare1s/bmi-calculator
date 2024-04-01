@@ -12,6 +12,8 @@ module.exports = {
         dark_eletric_blue: '#5E6E85',
         borders: '#D8E2E7',
         pure_white: '#FFFFFF',
+        gradient_right_bottom: '#D6E6FE',
+        gradient_left_top: '#D6FCFE',
       },
     },
   },
