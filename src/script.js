@@ -20,4 +20,20 @@ metricButton.addEventListener('click', showMetricForm)
 imperialButton.addEventListener('click', showImperialForm)
 
 
+const heightMetricInput = document.querySelector('#height')
+const weightMetricInput = document.querySelector('#weight')
+const result = document.querySelector('#result')
+
+heightMetricInput.addEventListener('input', bmiCalculation)
+weightMetricInput.addEventListener('input', bmiCalculation)
+
+function bmiCalculation() {
+    const height = Number(heightMetricInput.value) / 100
+    const weight = Number(weightMetricInput.value)
+    const bmi = weight / (height * height)
+
+    result.innerText = bmi.toFixed(2)
+}
+
+
 
