@@ -15,82 +15,93 @@
 </head>
 <body class="font-Inter flex flex-col justify-center items-center m-auto">
 
-  <header class="rounded-b-2xl bg-gradient-to-br from-pure_white via-gradient_left_top to-gradient_right_bottom pt-8 px-6">
-    <div class="flex flex-col justify-center items-center mb-6 lg:justify-start lg:items-start">
-      <img class="w-10 lg:w-16" src="../assets/images/logo.svg" alt="Logo">
-    </div>
-    <h1 class="text-gunmetal font-semibold text-center text-5xl leading-[110%] tracking-[-5%] pb-6">Body Mass Index Calculator</h1>
-    <p class="text-dark_eletric_blue font-normal text-center text-base leading-[150%] pb-[217px]">
-      Better understand your weight in relation to your height using our
-      body mass index (BM) calculator. While BMI is not the sole determinant
-      of a healthy weight, it offers a valuable starting point to evaluate
-      your overall health and well-being.
-    </p>
-  </header>
+  <div class="flex flex-col justify-center items-center m-auto">
 
-  Enter your details below
+    <header class="rounded-b-2xl bg-gradient-to-br from-pure_white via-gradient_left_top to-gradient_right_bottom pt-8 px-6 md:rounded-[35px] w-full">
+      <div class="flex flex-col justify-center items-center mb-6 lg:justify-start lg:items-start">
+        <img class="w-10 lg:w-16" src="../assets/images/logo.svg" alt="Logo">
+      </div>
+      <h1 class="text-gunmetal font-semibold text-center text-5xl leading-[110%] tracking-[-5%] pb-6">Body Mass Index Calculator</h1>
+      <p class="text-dark_eletric_blue font-normal text-center text-base leading-[150%] pb-[217px]">
+        Better understand your weight in relation to your height using our
+        body mass index (BM) calculator. While BMI is not the sole determinant
+        of a healthy weight, it offers a valuable starting point to evaluate
+        your overall health and well-being.
+      </p>
+    </header>
 
-  Metric
-  Imperial
+    <section class="w-[95%] shadow-xl">
+      <h2 class="text-gunmetal font-semibold text-2xl tracking-[-5%] p-6">Enter your details below</h2>
+      <form class="flex justify-between items-center px-6 pb-6">
+        <div class="flex items-center gap-[18px]">
+          <input class="w-8 h-8 border border-borders text-blue focus:ring-borders focus:border-borders" type="radio" name="radio" id="metric">
+          <label class="text-gunmetal font-semibold leading-[150%]" for="metric">Metric</label>
+        </div>
+        <div class="flex items-center gap-[18px]">
+          <input class="w-8 h-8 border border-borders text-blue focus:ring-borders focus:border-borders" type="radio" name="radio" id="imperial">
+          <label class="text-gunmetal font-semibold leading-[150%]" for="imperial">Imperial</label>
+        </div>
+      </form>
 
-  Height
-  Weight
+      <form id="metric">
+        <div class="flex flex-col px-6 relative">
+          <label class="text-dark_eletric_blue text-sm leading-[150%]" for="height">Height</label>
+          <input class="rounded-xl border border-borders h-12" type="text" name="height" id="height">
+          <span class="absolute top-7 right-10 text-blue font-semibold text-2xl">cm</span>
+        </div>
+        <div class="flex flex-col px-6 relative mt-4">
+          <label class="text-dark_eletric_blue text-sm leading-[150%]" for="weight">Weight</label>
+          <input class="rounded-xl border border-borders h-12" type="text" name="weight" id="weight">
+          <span class="absolute top-7 right-10 text-blue font-semibold text-2xl">kg</span>
+        </div>
+      </form>
 
-  Your BMI is...
+      <div class="bg-blue mt-6">
+        Your BMI is...
+        <!-- add score -->
+        Your BMI suggests you're <!-- add classification -->.
+        Your ideal weight is between <!-- add range -->.
+      </div>
+    </section>
 
-  <!-- add score -->
-
-  Your BMI suggests you're <!-- add classification -->. 
-  Your ideal weight is between <!-- add range -->.
-
-  What your BMI result means
-
-  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
-  healthy weight may lower your chances of experiencing health issues later on, 
-  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
-  fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
-  strive for regular physical activity, ideally about 30 minutes daily for 
-  five days a week.
-
-  Healthy eating
-  Healthy eating promotes weight control, disease prevention, better digestion, 
-  immunity, mental clarity, and mood.
-
-  Regular exercise
-  Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
-  risk, fostering wellness and longevity.
-
-  Adequate sleep
-  Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
-  overall restoration and rejuvenation.
-
-  Limitations of BMI
-
-  Although BMI is often a practical indicator of healthy weight, it is not suited for 
-  every person. Specific groups should carefully consider their BMI outcomes, and in 
-  certain cases, the measurement may not be beneficial to use.
-
-  Gender
-  The development and body fat composition of girls and boys vary with age. Consequently, 
-  a child's age and gender are considered when evaluating their BMI.
-
-  Age
-  In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
-  body fat content.
-
-  Muscle
-  BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
-  differentiate muscle from fat.
-
-  Pregnancy
-  Expectant mothers experience weight gain due to their growing baby. Maintaining a 
-  healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
-  and child.
-
-  Race
-  Certain health concerns may affect individuals of some Black and Asian origins at 
-  lower BMIs than others. To learn more, it is advised to discuss this with your 
-  GP or practice nurse.
+    What your BMI result means
+    A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+    healthy weight may lower your chances of experiencing health issues later on,
+    such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
+    fat and sugar content, incorporating ample fruits and vegetables. Additionally,
+    strive for regular physical activity, ideally about 30 minutes daily for
+    five days a week.
+    Healthy eating
+    Healthy eating promotes weight control, disease prevention, better digestion,
+    immunity, mental clarity, and mood.
+    Regular exercise
+    Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+    risk, fostering wellness and longevity.
+    Adequate sleep
+    Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
+    overall restoration and rejuvenation.
+    Limitations of BMI
+    Although BMI is often a practical indicator of healthy weight, it is not suited for
+    every person. Specific groups should carefully consider their BMI outcomes, and in
+    certain cases, the measurement may not be beneficial to use.
+    Gender
+    The development and body fat composition of girls and boys vary with age. Consequently,
+    a child's age and gender are considered when evaluating their BMI.
+    Age
+    In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
+    body fat content.
+    Muscle
+    BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+    differentiate muscle from fat.
+    Pregnancy
+    Expectant mothers experience weight gain due to their growing baby. Maintaining a
+    healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+    and child.
+    Race
+    Certain health concerns may affect individuals of some Black and Asian origins at
+    lower BMIs than others. To learn more, it is advised to discuss this with your
+    GP or practice nurse.
+  </div>
 
 </body>
 </html>
