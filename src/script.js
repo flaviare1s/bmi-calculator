@@ -69,6 +69,7 @@ function bmiCalculationMetric() {
     errorBox.classList.add('hidden')
 
     result.innerText = bmi.toFixed(1)
+    classificationMetric(bmi)
 }
 heightMetricInput.addEventListener('input', bmiCalculationMetric)
 weightMetricInput.addEventListener('input', bmiCalculationMetric)
@@ -148,11 +149,62 @@ function bmiCalculationImperial() {
     errorBox.classList.add('hidden')
 
     result.innerText = bmiImperial.toFixed(1)
+    classificationImperial(bmiImperial)
 }
 feetInput.addEventListener('input', bmiCalculationImperial)
 inchesInput.addEventListener('input', bmiCalculationImperial)
 stoneInput.addEventListener('input', bmiCalculationImperial)
 poundsInput.addEventListener('input', bmiCalculationImperial)
+
+
+// Classificações:
+const classificationSpan = document.querySelector('#classification')
+
+function classificationMetric(bmi) {
+    if(bmi <= 16) {
+        classificationSpan.innerText = 'severe thinnes'
+    } else if(bmi > 16 && bmi <= 17 ) {
+        classificationSpan.innerText = 'moderate thinnes'
+    } else if(bmi > 17 && bmi <= 18.5 ) {
+        classificationSpan.innerText = 'mild thinnes'
+    }  else if(bmi > 18.5 && bmi <= 25 ) {
+        classificationSpan.innerText = 'healthy weight'
+    }  else if(bmi > 25 && bmi <= 30 ) {
+        classificationSpan.innerText = 'overweight'
+    }  else if(bmi > 30 && bmi <= 35 ) {
+        classificationSpan.innerText = 'obese class I'
+    }  else if(bmi > 35 && bmi <= 40 ) {
+        classificationSpan.innerText = 'obese class II'
+    }  else {
+        classificationSpan.innerText = 'obese class III'
+    }     
+}
+
+function classificationImperial(bmiImperial) {
+    if(bmiImperial <= 16) {
+        classificationSpan.innerText = 'severe thinnes'
+    } else if(bmiImperial > 16 && bmiImperial <= 17 ) {
+        classificationSpan.innerText = 'moderate thinnes'
+    } else if(bmiImperial > 17 && bmiImperial <= 18.5 ) {
+        classificationSpan.innerText = 'mild thinnes'
+    }  else if(bmiImperial > 18.5 && bmiImperial <= 25 ) {
+        classificationSpan.innerText = 'healthy weight'
+    }  else if(bmiImperial > 25 && bmiImperial <= 30 ) {
+        classificationSpan.innerText = 'overweight'
+    }  else if(bmiImperial > 30 && bmiImperial <= 35 ) {
+        classificationSpan.innerText = 'obese class I'
+    }  else if(bmiImperial > 35 && bmiImperial <= 40 ) {
+        classificationSpan.innerText = 'obese class II'
+    }  else {
+        classificationSpan.innerText = 'obese class III'
+    }     
+}
+
+
+
+// Range:
+const rangeSpan = document.querySelector('#range')
+
 
 
 
