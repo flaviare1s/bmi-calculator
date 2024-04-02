@@ -84,14 +84,23 @@
       </form>
 
       <div class="flex flex-col justify-center items-center m-auto w-[87%]">
-        <div class="bg-blue w-full p-8 mt-6 mx-auto rounded-2xl mb-6">
+        <div id="resultBox" class="hidden bg-blue w-full p-8 mt-6 mx-auto rounded-2xl mb-6">
           <p class="text-pure_white font-semibold leading-[150%]">Your BMI is...</p>
           <p id="result" class="mt-2 pb-6 text-pure_white font-semibold text-5xl"></p>
           <p class="text-pure_white text-sm font-regular leading-[150%]">
             Your BMI suggests you're <span id="classification">healthy weight</span>. Your ideal weight is between <span id="range" class="font-bold">teste teste teste</span>.
           </p> 
         </div>
+
+        <div id="welcomeBox" class="bg-blue w-full p-8 mt-6 mx-auto rounded-2xl mb-6">
+          <p class="text-pure_white font-semibold leading-[150%]">Welcome!</p>
+          <br>
+          <p class="text-pure_white text-sm font-regular leading-[150%]">
+            Enter your height and weight and you’ll see your BMI result here
+          </p> 
+        </div>
       </div>
+
     </section>
 
     <div>
