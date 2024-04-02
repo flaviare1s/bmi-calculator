@@ -140,10 +140,8 @@ function bmiCalculationImperial() {
     const weighLbs = Number(poundsInput.value)
 
     const totalHeightIn = heighFt * 12 + heighIn
-    const heightCm = totalHeightIn * 2.54
     const totalWeightLbs = weightSt * 14 + weighLbs
-    const weightKg = totalWeightLbs * 0.453592
-    const bmiImperial = (weightKg * 703) / (heightCm * heightCm)
+    const bmiImperial = (totalWeightLbs * 703) / (totalHeightIn * totalHeightIn)
     
     resultBox.classList.add('active')
     welcomeBox.classList.add('hidden')
