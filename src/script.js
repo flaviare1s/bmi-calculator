@@ -48,9 +48,10 @@ function validateMetricInputs() {
         welcomeBox.classList.add('hidden')
         weightMetricInput.value = ""
         return false
-    }
-
-    return true
+    } else {
+        errorBox.classList.remove('active')
+        return true
+    } 
 }
 heightMetricInput.addEventListener('input', validateMetricInputs)
 weightMetricInput.addEventListener('input', validateMetricInputs)
