@@ -21,7 +21,6 @@ function showImperialForm() {
     metricForm.classList.remove('active')
 
 }
-
 metricButton.addEventListener('click', showMetricForm)
 imperialButton.addEventListener('click', showImperialForm)
 
@@ -56,7 +55,6 @@ function validateMetricInputs() {
 heightMetricInput.addEventListener('input', validateMetricInputs)
 weightMetricInput.addEventListener('input', validateMetricInputs)
 
-
 // Cálculo do IMC no sistema métrico:
 function bmiCalculationMetric() {
     if (!validateMetricInputs()) {
@@ -75,18 +73,65 @@ function bmiCalculationMetric() {
 heightMetricInput.addEventListener('input', bmiCalculationMetric)
 weightMetricInput.addEventListener('input', bmiCalculationMetric)
 
-// Cálculo do IMC no sistema imperial:
+
+
+// Validação dos inputs no sitema imperial:
 const feetInput = document.querySelector('#ft')
 const inchesInput = document.querySelector('#in')
 const stoneInput = document.querySelector('#st')
 const poundsInput = document.querySelector('#lbs')
 
-feetInput.addEventListener('input', bmiCalculationImperial)
-inchesInput.addEventListener('input', bmiCalculationImperial)
-stoneInput.addEventListener('input', bmiCalculationImperial)
-poundsInput.addEventListener('input', bmiCalculationImperial)
+function validateImperialInputs() {
+    const heightValueFs = Number(heightMetricInput.value)
+    const heightValueIn = Number(heightMetricInput.value)
+    const weightValueSt = Number(weightMetricInput.value)
+    const weightValueLbs = Number(weightMetricInput.value)
 
+    if (isNaN(heightValueFs) || heightValueFs <= 0) {
+        errorBox.classList.add('active')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('hidden')
+        heightMetricInput.value = ""
+        return false
+    }
+
+    if (isNaN(heightValueIn) || heightValueIn <= 0) {
+        errorBox.classList.add('active')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('hidden')
+        heightMetricInput.value = ""
+        return false
+    }
+
+    if (isNaN(weightValueSt) || weightValueSt <= 0) {
+        errorBox.classList.add('active')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('hidden')
+        weightMetricInput.value = ""
+        return false
+    }
+
+    if (isNaN(weightValueLbs) || weightValueLbs <= 0) {
+        errorBox.classList.add('active')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('hidden')
+        weightMetricInput.value = ""
+        return false
+    } else {
+        errorBox.classList.remove('active')
+        return true
+    } 
+}
+feetInput.addEventListener('input', validateMetricInputs)
+inchesInput.addEventListener('input', validateMetricInputs)
+stoneInput.addEventListener('input', validateMetricInputs)
+poundsInput.addEventListener('input', validateMetricInputs)
+
+// Cálculo do IMC no sistema imperial:
 function bmiCalculationImperial() {
+    if (!validateImperialInputs()) {
+        return
+    }
     const heighFt = Number(feetInput.value)
     const heighIn = Number(inchesInput.value)
     const weightSt = Number(stoneInput.value)
@@ -104,6 +149,10 @@ function bmiCalculationImperial() {
 
     result.innerText = bmiImperial.toFixed(1)
 }
+feetInput.addEventListener('input', bmiCalculationImperial)
+inchesInput.addEventListener('input', bmiCalculationImperial)
+stoneInput.addEventListener('input', bmiCalculationImperial)
+poundsInput.addEventListener('input', bmiCalculationImperial)
 
 
 
