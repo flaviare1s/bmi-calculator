@@ -122,10 +122,10 @@ function validateImperialInputs() {
         return true
     } 
 }
-feetInput.addEventListener('input', validateMetricInputs)
-inchesInput.addEventListener('input', validateMetricInputs)
-stoneInput.addEventListener('input', validateMetricInputs)
-poundsInput.addEventListener('input', validateMetricInputs)
+feetInput.addEventListener('input', validateImperialInputs)
+inchesInput.addEventListener('input', validateImperialInputs)
+stoneInput.addEventListener('input', validateImperialInputs)
+poundsInput.addEventListener('input', validateImperialInputs)
 
 // Cálculo do IMC no sistema imperial:
 function bmiCalculationImperial() {
