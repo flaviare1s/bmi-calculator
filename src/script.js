@@ -33,19 +33,19 @@ function validateMetricInputs() {
     const heightValue = Number(heightMetricInput.value)
     const weightValue = Number(weightMetricInput.value)
 
-    if (isNaN(heightValue) || heightValue <= 0) {
+    if (isNaN(heightValue) || heightValue < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightMetricInput.value = ""
+        heightMetricInput.value = ''
         return false
     }
 
-    if (isNaN(weightValue) || weightValue <= 0) {
+    if (isNaN(weightValue) || weightValue < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        weightMetricInput.value = ""
+        weightMetricInput.value = ''
         return false
     } else {
         errorBox.classList.remove('active')
@@ -87,35 +87,37 @@ function validateImperialInputs() {
     const weightValueSt = Number(weightMetricInput.value)
     const weightValueLbs = Number(weightMetricInput.value)
 
-    if (isNaN(heightValueFs) || heightValueFs <= 0) {
+    if (isNaN(heightValueFs) || heightValueFs < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightMetricInput.value = ""
+        heightValueFs.value = ''
         return false
     }
 
-    if (isNaN(heightValueIn) || heightValueIn <= 0) {
+    if (isNaN(heightValueIn) || heightValueIn < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightMetricInput.value = ""
+        heightValueIn.value = ''
         return false
     }
 
-    if (isNaN(weightValueSt) || weightValueSt <= 0) {
+    if (isNaN(weightValueSt) || weightValueSt < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        weightMetricInput.value = ""
+        stoneInput.value = ''
+        poundsInput.value = ''
         return false
     }
 
-    if (isNaN(weightValueLbs) || weightValueLbs <= 0) {
+    if (isNaN(weightValueLbs) || weightValueLbs < 0) {
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        weightMetricInput.value = ""
+        stoneInput.value = ''
+        stoneInput.value = ''
         return false
     } else {
         errorBox.classList.remove('active')
@@ -138,7 +140,7 @@ function bmiCalculationImperial() {
     const weighLbs = Number(poundsInput.value)
 
     const totalHeightIn = heighFt * 12 + heighIn
-    const heightCm = totalHeightIn * 0.0254
+    const heightCm = totalHeightIn * 2.54
     const totalWeightLbs = weightSt * 14 + weighLbs
     const weightKg = totalWeightLbs * 0.453592
     const bmiImperial = (weightKg * 703) / (heightCm * heightCm)
