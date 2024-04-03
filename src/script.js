@@ -200,7 +200,7 @@ function bmiCalculationImperial() {
 
     result.innerText = bmiImperial.toFixed(1)
     classificationImperial(bmiImperial)
-    rangeMetric(heightFt, heightIn)
+    rangeImperial(heightFt, heightIn)
 }
 feetInput.addEventListener('input', bmiCalculationImperial)
 inchesInput.addEventListener('input', bmiCalculationImperial)
@@ -232,19 +232,19 @@ function classificationImperial(bmiImperial) {
 function rangeImperial(heightFt, heightIn) {
     const heightImperial = heightFt * 12 + heightIn;
 
-    if (heightInches > 58 && heightInches <= 62) {
+    if (heightImperial > 58 && heightImperial <= 62) {
         rangeSpan.innerText = "6st 10lbs - 8st 10lbs"
-    } else if (heightImperial > 62 && heightInches <= 64) {
+    } else if (heightImperial > 62 && heightImperial <= 64) {
         rangeSpan.innerText = "7st 0lbs - 9st 2lbs"
-    } else if (heightImperial > 64 && heightInches <= 66) {
+    } else if (heightImperial > 64 && heightImperial <= 66) {
         rangeSpan.innerText = "7st 6lbs - 10st 0lbs"
-    } else if (heightImperial > 66 && heightInches <= 68) {
+    } else if (heightImperial > 66 && heightImperial <= 68) {
         rangeSpan.innerText = "8st 0lbs - 10st 10lbs"
-    } else if (heightImperial > 68 && heightInches <= 70) {
+    } else if (heightImperial > 68 && heightImperial <= 70) {
         rangeSpan.innerText = "8st 8lbs - 11st 6lbs"
-    } else if (heightImperial > 70 && heightInches <= 72) {
+    } else if (heightImperial > 70 && heightImperial <= 72) {
         rangeSpan.innerText = "9st 0lbs - 12st 0lbs"
-    } else if (heightImperial > 72 && heightInches <= 74) {
+    } else if (heightImperial > 72 && heightImperial <= 74) {
         rangeSpan.innerText = "9st 6lbs - 12st 6lbs"
     } else if (heightImperial > 74) {
         rangeSpan.innerText = "10st 0lbs - 13st 4lbs"
