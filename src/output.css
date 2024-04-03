@@ -989,6 +989,10 @@ video {
   width: 5%;
 }
 
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1641,6 +1645,30 @@ video {
     top: 4%;
   }
 
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .xl\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+
+  .xl\:m-0 {
+    margin: 0px;
+  }
+
+  .xl\:m-auto {
+    margin: auto;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1669,8 +1697,72 @@ video {
     margin-top: 800px;
   }
 
+  .xl\:ml-\[130px\] {
+    margin-left: 130px;
+  }
+
+  .xl\:mr-\[130px\] {
+    margin-right: 130px;
+  }
+
+  .xl\:mr-\[132px\] {
+    margin-right: 132px;
+  }
+
+  .xl\:mr-\[100px\] {
+    margin-right: 100px;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:ml-\[400px\] {
+    margin-left: 400px;
+  }
+
+  .xl\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .xl\:ml-\[20\%\] {
+    margin-left: 20%;
+  }
+
+  .xl\:ml-\[20px\] {
+    margin-left: 20px;
+  }
+
+  .xl\:ml-\[120px\] {
+    margin-left: 120px;
+  }
+
+  .xl\:ml-\[320px\] {
+    margin-left: 320px;
+  }
+
+  .xl\:ml-\[223px\] {
+    margin-left: 223px;
+  }
+
+  .xl\:mr-\[223px\] {
+    margin-right: 223px;
+  }
+
+  .xl\:mr-\[339px\] {
+    margin-right: 339px;
+  }
+
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:grid {
+    display: grid;
+  }
+
+  .xl\:h-auto {
+    height: auto;
   }
 
   .xl\:w-\[\] {
@@ -1687,6 +1779,34 @@ video {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-\[33\%\] {
+    width: 33%;
+  }
+
+  .xl\:w-1 {
+    width: 0.25rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -1707,6 +1827,10 @@ video {
 
   .xl\:justify-start {
     justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
   }
 
   .xl\:justify-center {
@@ -1796,6 +1920,14 @@ video {
 
   .xl\:pt-\[103px\] {
     padding-top: 103px;
+  }
+
+  .xl\:pl-\[200px\] {
+    padding-left: 200px;
+  }
+
+  .xl\:pl-\[223px\] {
+    padding-left: 223px;
   }
 
   .xl\:text-left {
