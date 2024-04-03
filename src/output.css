@@ -1458,12 +1458,28 @@ video {
     margin-left: -50px;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-\[75\] {
@@ -1480,6 +1496,10 @@ video {
 
   .md\:gap-\[30px\] {
     gap: 30px;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:rounded {
@@ -1517,6 +1537,15 @@ video {
   .md\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
 
