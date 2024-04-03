@@ -175,6 +175,13 @@ function validateImperialInputs() {
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
+    } 
+    
+    if (heightValueFs === '' || heightValueIn === '' || weightValueSt === '' || weightValueLbs === '' || heightValueFs === null || heightValueIn === null || weightValueSt === null || weightValueLbs === null) {
+        errorBox.classList.add('hidden')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('active')
+        return false
     } else {
         errorBox.classList.remove('active')
         return true
