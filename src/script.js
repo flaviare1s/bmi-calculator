@@ -36,17 +36,17 @@ function validateMetricInputs() {
 
     if (isNaN(heightValue) || heightValue < 0) {
         errorBox.classList.add('active')
+        errorBox.classList.remove('hidden')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightMetricInput.value = ''
         return false
     }
 
     if (isNaN(weightValue) || weightValue < 0) {
         errorBox.classList.add('active')
+        errorBox.classList.remove('hidden')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        weightMetricInput.value = ''
         return false
     } else {
         errorBox.classList.remove('active')
@@ -133,42 +133,40 @@ const stoneInput = document.querySelector('#st')
 const poundsInput = document.querySelector('#lbs')
 
 function validateImperialInputs() {
-    const heightValueFs = Number(heightMetricInput.value)
-    const heightValueIn = Number(heightMetricInput.value)
-    const weightValueSt = Number(weightMetricInput.value)
-    const weightValueLbs = Number(weightMetricInput.value)
+    const heightValueFs = Number(feetInput.value)
+    const heightValueIn = Number(inchesInput.value)
+    const weightValueSt = Number(stoneInput.value)
+    const weightValueLbs = Number(poundsInput.value)
 
     if (isNaN(heightValueFs) || heightValueFs < 0) {
+        errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightValueFs.value = ''
         return false
     }
 
     if (isNaN(heightValueIn) || heightValueIn < 0) {
+        errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        heightValueIn.value = ''
         return false
     }
 
     if (isNaN(weightValueSt) || weightValueSt < 0) {
+        errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        stoneInput.value = ''
-        poundsInput.value = ''
         return false
     }
 
     if (isNaN(weightValueLbs) || weightValueLbs < 0) {
+        errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
-        stoneInput.value = ''
-        stoneInput.value = ''
         return false
     } else {
         errorBox.classList.remove('active')
