@@ -1637,6 +1637,10 @@ video {
     top: 5%;
   }
 
+  .xl\:top-\[4\%\] {
+    top: 4%;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1655,6 +1659,18 @@ video {
 
   .xl\:mt-\[1000px\] {
     margin-top: 1000px;
+  }
+
+  .xl\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .xl\:mt-\[800px\] {
+    margin-top: 800px;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:w-\[\] {
@@ -1677,8 +1693,44 @@ video {
     flex-direction: row;
   }
 
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:justify-between {
     justify-content: space-between;
+  }
+
+  .xl\:gap-11 {
+    gap: 2.75rem;
+  }
+
+  .xl\:gap-\[131px\] {
+    gap: 131px;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
   }
 
   .xl\:rounded-l-none {
@@ -1703,6 +1755,11 @@ video {
   .xl\:px-\[116px\] {
     padding-left: 116px;
     padding-right: 116px;
+  }
+
+  .xl\:px-\[140px\] {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .xl\:pt-\[\] {
@@ -1747,6 +1804,11 @@ video {
 
   .xl\:text-\[64px\] {
     font-size: 64px;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .xl\:text-\[\] {
