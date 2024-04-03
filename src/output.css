@@ -1482,6 +1482,10 @@ video {
     display: grid;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1500,6 +1504,10 @@ video {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-between {
