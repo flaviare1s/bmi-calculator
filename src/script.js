@@ -103,11 +103,10 @@ function classificationMetric(bmi) {
 // Range no sitema metric:
 const rangeSpan = document.querySelector('#range')
 
-
 function rangeMetric(height) {
     const heightCm = height * 100
     if(heightCm > 150 && heightCm <= 155) {
-        rangeSpan.innerText = '41.6kg - 56kg'
+        rangeSpan.innerText = '42.6kg - 56kg'
     } else if(heightCm > 155 && heightCm <= 160 ) {
         rangeSpan.innerText = '44.4kg - 59.8kg'
     } else if(heightCm > 160 && heightCm <= 165 ) {
@@ -123,6 +122,7 @@ function rangeMetric(height) {
     }  else if(heightCm > 185) {
         rangeSpan.innerText = '63.3kg - 85.2kg'
     }     
+    return heightCm
 }
 
 
@@ -193,12 +193,12 @@ function bmiCalculationImperial() {
     if (!validateImperialInputs()) {
         return
     }
-    const heighFt = Number(feetInput.value)
-    const heighIn = Number(inchesInput.value)
+    const heightFt = Number(feetInput.value)
+    const heightIn = Number(inchesInput.value)
     const weightSt = Number(stoneInput.value)
     const weighLbs = Number(poundsInput.value)
 
-    const totalHeightIn = heighFt * 12 + heighIn
+    const totalHeightIn = heightFt * 12 + heightIn
     const totalWeightLbs = weightSt * 14 + weighLbs
     const bmiImperial = (totalWeightLbs * 703) / (totalHeightIn * totalHeightIn)
     
@@ -208,6 +208,7 @@ function bmiCalculationImperial() {
 
     result.innerText = bmiImperial.toFixed(1)
     classificationImperial(bmiImperial)
+    rangeMetric(heightFt, heightIn)
 }
 feetInput.addEventListener('input', bmiCalculationImperial)
 inchesInput.addEventListener('input', bmiCalculationImperial)
@@ -233,6 +234,31 @@ function classificationImperial(bmiImperial) {
     }  else {
         classificationSpan.innerText = 'obese class III'
     }     
+}
+
+// Range no sistema imperial:
+function rangeImperial(heightFt, heightIn) {
+    const heightImperial = heightFt * 12 + heightIn;
+
+    if (heightInches > 58 && heightInches <= 62) {
+        rangeSpan.innerText = "6st 10lbs - 8st 10lbs"
+    } else if (heightImperial > 62 && heightInches <= 64) {
+        rangeSpan.innerText = "7st 0lbs - 9st 2lbs"
+    } else if (heightImperial > 64 && heightInches <= 66) {
+        rangeSpan.innerText = "7st 6lbs - 10st 0lbs"
+    } else if (heightImperial > 66 && heightInches <= 68) {
+        rangeSpan.innerText = "8st 0lbs - 10st 10lbs"
+    } else if (heightImperial > 68 && heightInches <= 70) {
+        rangeSpan.innerText = "8st 8lbs - 11st 6lbs"
+    } else if (heightImperial > 70 && heightInches <= 72) {
+        rangeSpan.innerText = "9st 0lbs - 12st 0lbs"
+    } else if (heightImperial > 72 && heightInches <= 74) {
+        rangeSpan.innerText = "9st 6lbs - 12st 6lbs"
+    } else if (heightImperial > 74) {
+        rangeSpan.innerText = "10st 0lbs - 13st 4lbs"
+    }
+
+    return heightImperial
 }
 
 
