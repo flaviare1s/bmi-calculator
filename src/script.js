@@ -42,6 +42,13 @@ function validateMetricInputs() {
         return false
     }
 
+    if (heightValue === '' || weightValue === ''|| heightValue === null || weightValue === null) {
+        errorBox.classList.add('hidden')
+        resultBox.classList.add('hidden')
+        welcomeBox.classList.add('active')
+        return false
+    }
+
     if (isNaN(weightValue) || weightValue < 0) {
         errorBox.classList.add('active')
         errorBox.classList.remove('hidden')
