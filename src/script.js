@@ -37,6 +37,7 @@ function validateMetricInputs() {
     if (isNaN(heightValue) || heightValue < 0) {
         errorBox.classList.add('active')
         errorBox.classList.remove('hidden')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -44,6 +45,7 @@ function validateMetricInputs() {
 
     if (heightValue === '' || weightValue === ''|| heightValue === null || weightValue === null) {
         errorBox.classList.add('hidden')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('active')
         return false
@@ -52,6 +54,7 @@ function validateMetricInputs() {
     if (isNaN(weightValue) || weightValue < 0) {
         errorBox.classList.add('active')
         errorBox.classList.remove('hidden')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -148,6 +151,7 @@ function validateImperialInputs() {
     if (isNaN(heightValueFs) || heightValueFs < 0) {
         errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -156,6 +160,7 @@ function validateImperialInputs() {
     if (isNaN(heightValueIn) || heightValueIn < 0) {
         errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -164,6 +169,7 @@ function validateImperialInputs() {
     if (isNaN(weightValueSt) || weightValueSt < 0) {
         errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -172,6 +178,7 @@ function validateImperialInputs() {
     if (isNaN(weightValueLbs) || weightValueLbs < 0) {
         errorBox.classList.remove('hidden')
         errorBox.classList.add('active')
+        resultBox.classList.remove('active')
         resultBox.classList.add('hidden')
         welcomeBox.classList.add('hidden')
         return false
@@ -180,6 +187,8 @@ function validateImperialInputs() {
     if (heightValueFs === '' || heightValueIn === '' || weightValueSt === '' || weightValueLbs === '' || heightValueFs === null || heightValueIn === null || weightValueSt === null || weightValueLbs === null) {
         errorBox.classList.add('hidden')
         resultBox.classList.add('hidden')
+        resultBox.classList.remove('active')
+        resultBox.classList.remove('active')
         welcomeBox.classList.add('active')
         return false
     } else {
