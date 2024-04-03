@@ -885,6 +885,18 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-\[105\%\] {
+  margin-bottom: 105%;
+}
+
+.mb-\[\%\] {
+  margin-bottom: %;
+}
+
+.mb-\[95\%\] {
+  margin-bottom: 95%;
+}
+
 .flex {
   display: flex;
 }
