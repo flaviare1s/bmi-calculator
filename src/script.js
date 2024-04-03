@@ -25,7 +25,6 @@ metricButton.addEventListener('click', showMetricForm)
 imperialButton.addEventListener('click', showImperialForm)
 
 
-
 // SISTEMA METRIC:
 // Validação dos inputs no sitema metric:
 const heightMetricInput = document.querySelector('#height')
@@ -124,13 +123,6 @@ function rangeMetric(height) {
     }     
     return heightCm
 }
-
-
-
-
-
-
-
 
 
 // SISTEMA IMPERIAL:
