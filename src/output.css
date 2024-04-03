@@ -1773,6 +1773,10 @@ video {
     margin-top: 5rem;
   }
 
+  .xl\:mt-\[700px\] {
+    margin-top: 700px;
+  }
+
   .xl\:flex {
     display: flex;
   }
