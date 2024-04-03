@@ -997,6 +997,10 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1653,6 +1657,10 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .xl\:row-span-1 {
     grid-row: span 1 / span 1;
   }
@@ -1751,6 +1759,18 @@ video {
 
   .xl\:mr-\[339px\] {
     margin-right: 339px;
+  }
+
+  .xl\:mt-\[600px\] {
+    margin-top: 600px;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
   }
 
   .xl\:flex {
