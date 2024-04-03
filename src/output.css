@@ -1374,6 +1374,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:top-0 {
     top: 0px;
   }
@@ -1392,6 +1396,90 @@ video {
 
   .md\:top-\[7\%\] {
     top: 7%;
+  }
+
+  .md\:top-\[10\%\] {
+    top: 10%;
+  }
+
+  .md\:top-\[20\%\] {
+    top: 20%;
+  }
+
+  .md\:top-\[12\%\] {
+    top: 12%;
+  }
+
+  .md\:top-\[15\%\] {
+    top: 15%;
+  }
+
+  .md\:top-40 {
+    top: 10rem;
+  }
+
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
+  .md\:top-20 {
+    top: 5rem;
+  }
+
+  .md\:top-\[300px\] {
+    top: 300px;
+  }
+
+  .md\:top-\[500px\] {
+    top: 500px;
+  }
+
+  .md\:top-\[700px\] {
+    top: 700px;
+  }
+
+  .md\:top-\[750px\] {
+    top: 750px;
+  }
+
+  .md\:ml-\[\] {
+    margin-left: ;
+  }
+
+  .md\:ml-\[-10px\] {
+    margin-left: -10px;
+  }
+
+  .md\:ml-\[-30px\] {
+    margin-left: -30px;
+  }
+
+  .md\:ml-\[-50px\] {
+    margin-left: -50px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-\[75\] {
+    gap: 75;
+  }
+
+  .md\:gap-\[75px\] {
+    gap: 75px;
+  }
+
+  .md\:gap-\[55px\] {
+    gap: 55px;
+  }
+
+  .md\:gap-\[30px\] {
+    gap: 30px;
   }
 
   .md\:rounded {
@@ -1414,6 +1502,21 @@ video {
   .md\:rounded-r-full {
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
+  }
+
+  .md\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .md\:px-\[44px\] {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .md\:px-11 {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
   }
 }
 
