@@ -34,6 +34,10 @@ Os usuários devem ser capazes de:
 ## Como Contribuir
 Contribuições são bem-vindas! Se você tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
+## Agradecimentos
+
+Agradeço ao Frontend Mentor por fornecer o desafio e o design inspirador. Também sou grata às comunidades de desenvolvedores que compartilharam dicas e feedback.
+
 ## Hospedagem do Projeto
 Você pode visualizar a versão ao vivo do projeto no GitHub Pages, através do link:
 https://flaviare1s.github.io/bmi-calculator/src/
